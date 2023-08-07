@@ -13,7 +13,7 @@ In order to realize the function, you need to write the following content in .ba
 ```bash
 lfcd() {
 	local tempfile="$(mktemp)"
-	command lf -command "map q \$echo \$PWD >$tempfile; lf -remote \"send \$id quit\"" "$@"
+	command lf -command "map x \$echo \$PWD >$tempfile; lf -remote \"send \$id quit\"" "$@"
 
 	if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n $(pwd))" ]]; then
 		cd -- "$(cat "$tempfile")" || return

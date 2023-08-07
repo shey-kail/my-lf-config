@@ -214,8 +214,8 @@ map p
 map w
 
 # quit
-map x quit
-# map q cd_on_quit (this is implemented on .bashrc or .bash_alias, see https://github.com/gokcehan/lf/issues/785#issuecomment-1133989624 for more detail)
+map q quit
+# map x cd_on_quit (this is implemented on .bashrc or .bash_alias, see https://github.com/gokcehan/lf/issues/785#issuecomment-1133989624 for more detail)
 
 # show or hide hidden files
 map <backspace2> set hidden!
